@@ -1,6 +1,8 @@
 # LearnPython
 An List of questions basics from python, just take a time to learn this exceptional language
 
+fonte: https://wiki.python.org.br/EstruturaSequencial
+
 01 - Faça um Programa que mostre a mensagem "Alo mundo" na tela.
 
 02 - Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].
@@ -45,6 +47,7 @@ Faça um Programa que peça 2 números inteiros e um número real. Calcule e mos
     Obs.: Salário Bruto - Descontos = Salário Líquido. 
 
 15 - Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
+
 16 - Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00.
 
     Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações:
