@@ -17,28 +17,28 @@ valor_aumento = (reajuste_porcentagem * salario_antigo)/100
 salario_novo = salario_antigo + valor_aumento
 
 if salario_antigo <= 280:
-    print(f'Seu salário antes do reajuste: R$ {salario_antigo}')
-    print(f'Foram aplicados {reajuste_porcentagem}% de aumento')
-    print(f'O valor do aumento foi de: R$ {valor_aumento}')
-    print(f'Seu novo salário é: R$ {salario_novo}')
+    print(f'\nSeu salário antes do reajuste: R$ {salario_antigo} \n'
+          f'Foram aplicados {reajuste_porcentagem}% de aumento \n'
+          f'O valor do aumento foi de: R$ {valor_aumento} \n'
+          f'Seu novo salário é: R$ {salario_novo}')
 
 elif salario_antigo > 280 and salario_antigo <=700:
-    print(f'Seu salário antes do reajuste: R$ {salario_antigo}')
-    print(f'Foram aplicados {reajuste_porcentagem}% de aumento')
-    print(f'O valor do aumento foi de: R$ {valor_aumento}')
-    print(f'Seu novo salário é: R$ {salario_novo}')
+    print(f'\nSeu salário antes do reajuste: R$ {salario_antigo} \n'
+          f'Foram aplicados {reajuste_porcentagem}% de aumento \n'
+          f'O valor do aumento foi de: R$ {valor_aumento} \n'
+          f'Seu novo salário é: R$ {salario_novo}')
 
 elif salario_antigo > 700 and salario_antigo <= 1500:
-    print(f'Seu salário antes do reajuste: R$ {salario_antigo}')
-    print(f'Foram aplicados {reajuste_porcentagem}% de aumento')
-    print(f'O valor do aumento foi de: R$ {valor_aumento}')
-    print(f'Seu novo salário é: R$ {salario_novo}')
+    print(f'\nSeu salário antes do reajuste: R$ {salario_antigo} \n'
+          f'Foram aplicados {reajuste_porcentagem}% de aumento \n'
+          f'O valor do aumento foi de: R$ {valor_aumento} \n'
+          f'Seu novo salário é: R$ {salario_novo}')
 
 elif salario_antigo > 1500:
-    print(f'Seu salário antes do reajuste: R$ {salario_antigo}')
-    print(f'Foram aplicados {reajuste_porcentagem}% de aumento')
-    print(f'O valor do aumento foi de: R$ {valor_aumento}')
-    print(f'Seu novo salário é: R$ {salario_novo}')
+    print(f'\nSeu salário antes do reajuste: R$ {salario_antigo} \n'
+          f'Foram aplicados {reajuste_porcentagem}% de aumento \n'
+          f'O valor do aumento foi de: R$ {valor_aumento} \n'
+          f'Seu novo salário é: R$ {salario_novo}')
 
 else:
     print('Valores inválidos')
