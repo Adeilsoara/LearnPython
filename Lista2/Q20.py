@@ -9,6 +9,7 @@ nota2 = float(input('Digite sua 2ª nota: '))
 nota3 = float(input('Digite sua 3ª nota: '))
 
 media = (nota1 + nota2 + nota3)/3
+
 if media >= 7 and media < 10:
     print(f'Você foi aprovado sua média é: {media}')
 elif media < 7:
