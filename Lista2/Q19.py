@@ -25,3 +25,5 @@ if numero < 1000:
         print(f'O número possui {unidades} unidades ')
     elif unidades <= 1:
         print(f'O número possui {unidades} unidade ')
+else:
+    print('Informe um número menor que 1000...')
