@@ -13,24 +13,24 @@ print('*' * 30)
 print('         POSTO BUG')
 print('*' * 30)
 litros = float(input('Quantos litros de combustível você abasteceu?: '))
-tipo_combustivel = input('Qual combustível você colocou A- Alcoól e G-Gasolina: ').lower()
+tipo_combustivel = input('Qual combustível você colocou A- Alcool e G-Gasolina: ').lower()
 
 if tipo_combustivel == 'a':
     if litros <= 20:
         desconto = litros * 0.03
         valor_pag = (litros * 1.90) - (desconto * 1.90)
-        print(f'Valor a ser Pago R$ {valor_pag} ')
+        print(f'Valor a ser Pago pelo álcool R$ {valor_pag} ')
     else:
         desconto = litros * 0.05
         valor_pag = (litros * 1.90) - (desconto * 1.90)
-        print(f'Valor a ser Pago R$ {valor_pag} ')
+        print(f'Valor a ser Pago pelo álcool R$ {valor_pag} ')
 
 if tipo_combustivel == 'g':
     if litros <= 20:
         desconto = litros * 0.04
         valor_pag = (litros * 2.50) - (desconto * 2.50)
-        print(f'Valor a ser Pago R$ {valor_pag} ')
+        print(f'Valor a ser Pago pela gasolina R$ {valor_pag} ')
     else:
         desconto = litros * 0.06
         valor_pag = (litros * 2.50) - (desconto * 2.50)
-        print(f'Valor a ser Pago R$ {valor_pag} ')
+        print(f'Valor a ser Pago pela gasolina R$ {valor_pag} ')
