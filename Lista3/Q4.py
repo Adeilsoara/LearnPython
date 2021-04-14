@@ -14,5 +14,3 @@ while crescimentoA < crescimentoB:
 print(f'A quantidade de anos é: {anos} anos ')
 print(f'A população em A será de: {crescimentoA:.2f} ')
 print(f'A população em B será de: {crescimentoB:.2f} ')
-
-
