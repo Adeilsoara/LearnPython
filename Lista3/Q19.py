@@ -11,6 +11,6 @@ while qtd_numeros != cont:
          numero = int(input('Digite um número: '))
      numeros.append(numero)
      cont = cont + 1
-print(f'O menor número é: {min(numero)}')
-print(f'O maior número é: {max(numero)}')
-print(f'O a soma dos números é: {sum(numero)}')
+print(f'O menor número é: {min(numeros)}')
+print(f'O maior número é: {max(numeros)}')
+print(f'O a soma dos números é: {sum(numeros)}')
