@@ -19,4 +19,4 @@ termino = int(input('Terminar em: '))
 if termino < comeco:
     print('Você digitou o final menor que o inicial')
 for i in range(comeco, termino+1):
-    print(f'{tabuada} x {i} = {tabuada * i}  ')
+    print(f'{tabuada} x {i} = {tabuada * i} ')
