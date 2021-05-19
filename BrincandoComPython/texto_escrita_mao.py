@@ -1,3 +1,4 @@
 import  pywhatkit as kit
-
-kit.text_to_handwriting("Sua mensagem",r"C:\nomeQualquer.png")
+mensagem = "Brincando com Python\n e a Lib PyWhatkit"
+saida = "imagem.png"
+kit.text_to_handwriting(mensagem, saida)
