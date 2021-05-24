@@ -6,7 +6,7 @@ Faça um Programa que leia 20 números inteiros e armazene-os num vetor.
 vogais = ['a','e','i','o','u']
 consoantes = []
 cont = 0
-for i in range(4):
+for i in range(11):
     consoantes.append(input(f'Digite o {i+1}ª caracter: '))
     conso = consoantes[i]
     if conso not in vogais:
