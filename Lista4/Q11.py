@@ -10,7 +10,7 @@ for i in range (10):
 for j in range (10):
     numeros = int(input(f'Informe o {j + 1}ª elemento da 2ª lista: '))
     vetorB.append(numeros)
-for k in range (10):
+for k in range (10 ):
     numeros = int(input(f'Informe o {k + 1}ª elemento da 3ª lista: '))
     vetorC.append(numeros)
 print(f'O 1ª vetor é: {vetorA}')
