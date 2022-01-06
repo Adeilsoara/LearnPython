@@ -25,7 +25,7 @@ for i in range(5):
     saltos.append(salto)
 mediaSaltos = sum(saltos) / len(saltos)
 print("*"*30)
-print(f'Resultado final:')
+print(f'Resultado Final:')
 print(f'Atleta: {nomeAtleta}')
 print(f'Saltos: {saltos}')
 print(f'Média dos Saltos: {mediaSaltos} m')
