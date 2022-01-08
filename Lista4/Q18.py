@@ -9,6 +9,11 @@ while True:
         print('Informe um valor entre 1 e 23 ou 0 para sair!')
         break
     votos.append(voto)
-print(collections.Counter(votos))
-print(len(votos))
-print(votos)
+repeticoes = collections.Counter(votos)
+print(repeticoes)
+print(f'Foram computados: {len(votos)} votos')
+
+t = len(votos)
+porcentagem = list(map(lambda x: repeticoes[x]*100/t, repeticoes))
+percentagem = [round(repeticoes[x]*100/t,2) for x in repeticoes]
+print(f'{percentagem}')
