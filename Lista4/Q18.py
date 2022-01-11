@@ -10,10 +10,11 @@ while True:
         break
     votos.append(voto)
 repeticoes = collections.Counter(votos)
-print(repeticoes)
+print(f'{repeticoes}')
 print(f'Foram computados: {len(votos)} votos')
 
 t = len(votos)
 porcentagem = list(map(lambda x: repeticoes[x]*100/t, repeticoes))
 percentagem = [round(repeticoes[x]*100/t,2) for x in repeticoes]
+
 print(f'{percentagem}')
