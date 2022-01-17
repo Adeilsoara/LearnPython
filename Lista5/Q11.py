@@ -19,6 +19,3 @@ data_completa = dataExtenso(data)
 
 if data_completa is not None:
     print(data_completa)
-
-
-
