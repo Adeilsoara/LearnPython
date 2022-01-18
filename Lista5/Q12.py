@@ -12,6 +12,6 @@ for x in range(len(valor)):
 import random
 def embaralhar(valor):
     return random.shuffle(valor)
-valorEntrada = list(input('Informe uma palavra: '))
+valorEntrada = list(input('Informe uma palavra: ').lower())
 embaralhar(valorEntrada)
-print(''.join(valorEntrada))
+print(''.join((valorEntrada)))
