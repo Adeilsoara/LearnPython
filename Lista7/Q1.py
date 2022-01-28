@@ -42,4 +42,3 @@ if os.path.exists('ip.txt'):
                arquivo_ips_verificados.write(invalido + '\n')
 
         arquivo_ips_verificados.close()
-        
