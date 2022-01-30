@@ -33,13 +33,6 @@ de forma a agilizar a execução do programa. A conversão da espaço ocupado em
 ser feita através de uma função separada, que será chamada pelo programa principal. O cálculo do percentual de uso
 também deverá ser feito através de uma função, que será chamada pelo programa principal.
 '''
-import os
-
-def imprimirRelatorio(arquivo):
-    arquivo = open('usuarios.txt', 'r')
-    for arquivo in usuarios:
-        print(arquivo)
-
 with open('usuarios.txt') as usuarios:
     linhas = usuarios.read().splitlines()
     usuarios.close()
