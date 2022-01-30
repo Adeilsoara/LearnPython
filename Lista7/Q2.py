@@ -40,16 +40,22 @@ def imprimirRelatorio(arquivo):
     for arquivo in usuarios:
         print(arquivo)
 
-
-os.path.exists('usuarios.txt')
-usuarios = open('usuarios.txt', 'r')
-usuario = usuarios.read()
-for i in range(len(usuario)):
-    conta = usuario.split("\n").count(usuario)
-    print(f'{i} {usuario}')
+with open('usuarios.txt') as usuarios:
+    linhas = usuarios.read().splitlines()
+    usuarios.close()
 
 def imprimirNomes(lista):
     listaDeNomes = []
-    for i in range(len(lista)):
+    for i in range(0,len(lista)):
         listaDeNomes.append(lista[i][0:14].rstrip())
     return listaDeNomes
+
+def criarRelatorio(nomes):
+    open('relatorio.txt', 'a')
+    arquivo = open('relatorio.txt', 'w')
+    for i in range(1,len(nomes)):
+        arquivo.write((str(i) + ' ' + str(nomes[i])+ '\n'))
+        #arquivo.close()
+
+nomes = imprimirNomes(linhas)
+criarRelatorio(nomes)
