@@ -50,12 +50,19 @@ def imprimirNomes(lista):
         listaDeNomes.append(lista[i][0:14].rstrip())
     return listaDeNomes
 
-def criarRelatorio(nomes):
+def imprimirTamanhoConsumido(lista):
+    listaDeCosumo = []
+    for i in range(len(lista)):
+        listaDeCosumo.append(int(lista[i][15:len(lista[i])]))
+    return listaDeCosumo
+
+def criarRelatorio(nomes, consumo):
     open('relatorio.txt', 'a')
     arquivo = open('relatorio.txt', 'w')
-    for i in range(1,len(nomes)):
-        arquivo.write((str(i) + ' ' + str(nomes[i])+ '\n'))
+    for i in range(len(nomes)):
+        arquivo.write((str(i) + ' ' + str(nomes[i])+ ' '+str(consumo[i])+ 'MB'+'\n'))
         #arquivo.close()
 
 nomes = imprimirNomes(linhas)
-criarRelatorio(nomes)
+consumo = imprimirTamanhoConsumido(linhas)
+criarRelatorio(nomes, consumo)
