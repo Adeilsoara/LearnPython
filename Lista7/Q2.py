@@ -49,13 +49,20 @@ def imprimirTamanhoConsumido(lista):
         listaDeCosumo.append(int(lista[i][15:len(lista[i])]))
     return listaDeCosumo
 
-def criarRelatorio(nomes, consumo):
+def converterByteEmMega(lista):
+    listaEmMega = []
+    for i in range(len(lista)):
+        listaEmMega.append(round(int(lista[i])/1048576,2))
+    return listaEmMega
+
+def criarRelatorio(nomes, consumo, consumoMega):
     open('relatorio.txt', 'a')
     arquivo = open('relatorio.txt', 'w')
     for i in range(len(nomes)):
-        arquivo.write((str(i) + ' ' + str(nomes[i])+ ' '+str(consumo[i])+ 'MB'+'\n'))
+        arquivo.write((str(i) + ' ' + str(nomes[i])+ '  '+str(consumo[i])+ ' Bytes' + ' ' + str(consumoMega[i])+' MB '+'\n'))
         #arquivo.close()
 
 nomes = imprimirNomes(linhas)
 consumo = imprimirTamanhoConsumido(linhas)
-criarRelatorio(nomes, consumo)
+convercao = converterByteEmMega(consumo)
+criarRelatorio(nomes, consumo, convercao)
