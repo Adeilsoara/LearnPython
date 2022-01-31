@@ -59,7 +59,7 @@ def criarRelatorio(nomes, consumo, consumoMega):
     open('relatorio.txt', 'a')
     arquivo = open('relatorio.txt', 'w')
     for i in range(len(nomes)):
-        arquivo.write((str(i) + ' ' + str(nomes[i])+ '  '+str(consumo[i])+ ' Bytes' + ' ' + str(consumoMega[i])+' MB '+'\n'))
+        arquivo.write((str(i) + ' ' + str(nomes[i])+ '     '+str(consumo[i])+ '  Bytes' + ' ' + str(consumoMega[i])+' MB '+'\n'))
         #arquivo.close()
 
 nomes = imprimirNomes(linhas)
