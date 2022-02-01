@@ -1,6 +1,6 @@
-0 alexandre     456123789  Bytes 434.99 MB 
-1 anderson     1245698456  Bytes 1187.99 MB 
-2 antonio     123456456  Bytes 117.74 MB 
-3 carlos     91257581  Bytes 87.03 MB 
-4 cesar     987458  Bytes 0.94 MB 
-5 rosemary     789456125  Bytes 752.88 MB 
+0 alexandre     456123789  Bytes 434.99 MB 16.85 %
+1 anderson     1245698456  Bytes 1187.99 MB 46.02 %
+2 antonio     123456456  Bytes 117.74 MB 4.56 %
+3 carlos     91257581  Bytes 87.03 MB 3.37 %
+4 cesar     987458  Bytes 0.94 MB 0.04 %
+5 rosemary     789456125  Bytes 752.88 MB 29.16 %

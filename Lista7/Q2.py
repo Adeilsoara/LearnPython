@@ -55,14 +55,22 @@ def converterByteEmMega(lista):
         listaEmMega.append(round(int(lista[i])/1048576,2))
     return listaEmMega
 
-def criarRelatorio(nomes, consumo, consumoMega):
+def calcularPercentual(lista):
+    percentuais = []
+    valorTotal = sum(lista)
+    for i in range(len(lista)):
+        percentuais.append(round((lista[i]/valorTotal)*100,2))
+    return percentuais
+
+def criarRelatorio(nomes, consumo, consumoMega, percentuais):
     open('relatorio.txt', 'a')
     arquivo = open('relatorio.txt', 'w')
     for i in range(len(nomes)):
-        arquivo.write((str(i) + ' ' + str(nomes[i])+ '     '+str(consumo[i])+ '  Bytes' + ' ' + str(consumoMega[i])+' MB '+'\n'))
+        arquivo.write((str(i) + ' ' + str(nomes[i])+ '     '+str(consumo[i])+ '  Bytes' + ' ' + str(consumoMega[i])+' MB '+str(percentuais[i])+' %'+'\n'))
         #arquivo.close()
 
 nomes = imprimirNomes(linhas)
 consumo = imprimirTamanhoConsumido(linhas)
 convercao = converterByteEmMega(consumo)
-criarRelatorio(nomes, consumo, convercao)
+percentual = calcularPercentual(convercao)
+criarRelatorio(nomes, consumo, convercao, percentual)
