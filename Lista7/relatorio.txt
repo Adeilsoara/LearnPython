@@ -4,3 +4,5 @@
 3 carlos     91257581  Bytes 87.03 MB 3.37 %
 4 cesar     987458  Bytes 0.94 MB 0.04 %
 5 rosemary     789456125  Bytes 752.88 MB 29.16 %
+CONSUMO TOTAL: 2581.57 MB
+CONSUMO MEDIO: 430.26

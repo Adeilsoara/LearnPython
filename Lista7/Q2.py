@@ -62,12 +62,19 @@ def calcularPercentual(lista):
         percentuais.append(round((lista[i]/valorTotal)*100,2))
     return percentuais
 
+def calcularEspacoMedio(lista):
+    espacoMedio = round(sum(lista)/len(lista),2)
+    return espacoMedio
+
 def criarRelatorio(nomes, consumo, consumoMega, percentuais):
     open('relatorio.txt', 'a')
     arquivo = open('relatorio.txt', 'w')
     for i in range(len(nomes)):
         arquivo.write((str(i) + ' ' + str(nomes[i])+ '     '+str(consumo[i])+ '  Bytes' + ' ' + str(consumoMega[i])+' MB '+str(percentuais[i])+' %'+'\n'))
-        #arquivo.close()
+    totalConsumo = sum(consumoMega)
+    consumoMedio = calcularEspacoMedio(consumoMega)
+    arquivo.write('CONSUMO TOTAL: ' +str(totalConsumo)+' MB'+'\n'+'CONSUMO MEDIO: '+str(consumoMedio)+'\n')
+    arquivo.close()
 
 nomes = imprimirNomes(linhas)
 consumo = imprimirTamanhoConsumido(linhas)
