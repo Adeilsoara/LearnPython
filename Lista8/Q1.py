@@ -21,4 +21,3 @@ bola.mostrarCor()
 bola.trocarCor('azul')
 bola.mostrarCor()
 print(f'A circunferencia é {round(bola.calcularCircunferencia(2),2)}')
-
