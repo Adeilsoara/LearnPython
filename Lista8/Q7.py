@@ -19,3 +19,4 @@ class Tamagoshi:
         self.nome = novoNome
 
 
+
