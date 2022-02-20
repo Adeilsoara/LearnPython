@@ -1,14 +1,20 @@
 import requests
 
-def converter():
+def requisitarCotacao():
     requisicao = requests.get('https://economia.awesomeapi.com.br/json/last/USD-BRL')
     resposta = requisicao.json()
     cotacao = resposta['USDBRL']['high']
     return cotacao
 
-print('*'*10 +'CONVERSOR DE MOEDA USD -> BRL' + '*'*10)
-real = float(input('Digite o valor em Dólar: '))
-conversao = round((float(converter()) * real), 2)
+def modelarImpressao():
+    return print('*'*10 +'CONVERSOR DE MOEDA USD -> BRL' + '*'*10)
 
-print(f'USD {conversao}')
+def converterValorParaFloat():
+    return round((float(requisitarCotacao()) * real), 2)
+
+modelarImpressao()
+real = float(input('Digite o valor em Dólar: '))
+converterValorParaFloat()
+
+print(f'USD {converterValorParaFloat()}')
 
