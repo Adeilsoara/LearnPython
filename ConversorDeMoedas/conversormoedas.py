@@ -10,10 +10,10 @@ def modelarImpressao():
     return print('*'*10 +'CONVERSOR DE MOEDA USD -> BRL' + '*'*10)
 
 def converterValorParaFloat():
-    return round((float(requisitarCotacao()) * real), 2)
+    return round((float(requisitarCotacao()) * dolar), 2)
 
 modelarImpressao()
-real = float(input('Digite o valor em Dólar: '))
+dolar = float(input('Digite o valor em Dólar: '))
 converterValorParaFloat()
 
 print(f'USD {converterValorParaFloat()}')
