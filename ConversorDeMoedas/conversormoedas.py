@@ -5,11 +5,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    requisicao = requests.get('https://economia.awesomeapi.com.br/json/last/USD-BRL')
+    requisicao = requests.get('https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL')
     resposta = requisicao.json()
     cotacaoBaixa = resposta['USDBRL']['low']
     cotacaoAlta = resposta['USDBRL']['high']
-    return render_template("home.html", cotacaoBaixa=cotacaoBaixa, cotacaoAlta = cotacaoAlta)
+    cotacaoAltaEU = resposta['EURBRL']['high']
+    cotacaoBaixaEU = resposta['EURBRL']['low']
+    return render_template("home.html", cotacaoBaixa=cotacaoBaixa, cotacaoAlta = cotacaoAlta, cotacaoAltaEU=cotacaoAltaEU, cotacaoBaixaEU=cotacaoBaixaEU)
 
 
 # def requisitarCotacao():
