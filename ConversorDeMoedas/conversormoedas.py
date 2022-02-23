@@ -11,7 +11,10 @@ def home():
     cotacaoAlta = resposta['USDBRL']['high']
     cotacaoAltaEU = resposta['EURBRL']['high']
     cotacaoBaixaEU = resposta['EURBRL']['low']
-    return render_template("home.html", cotacaoBaixa=cotacaoBaixa, cotacaoAlta = cotacaoAlta, cotacaoAltaEU=cotacaoAltaEU, cotacaoBaixaEU=cotacaoBaixaEU)
+    atualizacaoUSD = resposta['USDBRL']['create_date']
+    atualizacaoEU = resposta['EURBRL']['create_date']
+    return render_template("home.html", cotacaoBaixa=cotacaoBaixa, cotacaoAlta = cotacaoAlta, cotacaoAltaEU=cotacaoAltaEU,
+                           cotacaoBaixaEU=cotacaoBaixaEU, atualizacaoUSD=atualizacaoUSD, atualizacaoEU=atualizacaoEU)
 
 
 # def requisitarCotacao():
