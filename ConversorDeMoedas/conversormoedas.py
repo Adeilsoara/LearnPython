@@ -29,11 +29,7 @@ def home():
 # def converterValorParaFloat():
 #     return round((float(requisitarCotacao()) * dolar), 2)
 
-#modelarImpressao()
-#dolar = float(input('Digite o valor em Dólar: '))
-#converterValorParaFloat()
-#
-# print(f'(BRL)  R$ {converterValorParaFloat()}')
+
 
 if __name__  == "__main__":
     app.run(debug=True)
