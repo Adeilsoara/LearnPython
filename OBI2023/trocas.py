@@ -17,7 +17,7 @@ for a in range(int(Y[1])):
 		cima[i] = res2
 		baixo[i] = res
 		i += 1
-	# print(cima)
-	# print(baixo)
+	print(cima)
+	print(baixo)
 for i in cima:
 	print(i, end=" ")
