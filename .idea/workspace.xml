@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1afb5f87-56b0-49fa-8057-f6454bd0ed4b" name="Changes" comment="OBI 2023 - Trocas" />
+    <list default="true" id="1afb5f87-56b0-49fa-8057-f6454bd0ed4b" name="Changes" comment="OBI 2023 - Trocas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +18,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7513732c-32eb-4d68-9392-9307c50ef768" />
+        <option name="url" value="https://github.com/Adeilsoara/LearnPython.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2QJ605kz2mNb1Any87GrI6KKRLm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -71,7 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685059816620</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="OBI 2023 - Trocas">
+      <created>1685059936981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685059936981</updated>
+    </task>
+    <task id="LOCAL-00003" summary="OBI 2023 - Trocas">
+      <created>1685060023489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685060023489</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +108,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="OBI 2023 - Trocas" />
